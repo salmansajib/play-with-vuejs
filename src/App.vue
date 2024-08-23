@@ -1,5 +1,7 @@
 <script setup>
+import ConditionalRendering from "./components/ConditionalRendering.vue";
 import Counter from "./components/Counter.vue";
+import Iteration from "./components/Iteration.vue";
 </script>
 
 <template>
@@ -11,6 +13,16 @@ import Counter from "./components/Counter.vue";
     </header>
     <div class="min-h-screen flex flex-col items-center justify-center">
       <Counter />
+    </div>
+    <div
+      class="min-h-screen bg-slate-700 text-gray-100 flex flex-col items-center justify-center"
+    >
+      <ConditionalRendering />
+    </div>
+    <div
+      class="min-h-screen bg-green-100 text-gray-100 flex flex-col items-center justify-center"
+    >
+      <Iteration />
     </div>
   </div>
 </template>
