@@ -40,17 +40,19 @@ const books = ref([
 </script>
 
 <template>
-  <h1 class="text-slate-900 text-3xl font-bold mb-5">Book List</h1>
-  <div class="flex flex-col gap-7">
+  <h1 class="text-slate-900 text-3xl font-bold mb-10">Book List</h1>
+  <div
+    class="max-w-[700px] mx-auto flex flex-wrap items-center justify-center gap-7"
+  >
     <div
       class="text-slate-900 text-center"
-      v-for="book in books"
-      :key="book.id"
+      v-for="{ id, title, author, genre, publicationYear } in books"
+      :key="id"
     >
-      <h1 class="text-xl font-semibold">{{ book.title }}</h1>
-      <h2>By {{ book.author }}</h2>
-      <p class="font-semibold text-green-600">{{ book.genre }}</p>
-      <p>Puplished in {{ book.publicationYear }}</p>
+      <h1 class="text-xl font-semibold">{{ title }}</h1>
+      <h2>By {{ author }}</h2>
+      <p class="font-semibold text-green-600">{{ genre }}</p>
+      <p>Puplished in {{ publicationYear }}</p>
     </div>
   </div>
 </template>

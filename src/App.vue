@@ -1,6 +1,7 @@
 <script setup>
 import ConditionalRendering from "./components/ConditionalRendering.vue";
 import Counter from "./components/Counter.vue";
+import InputBindings from "./components/InputBindings.vue";
 import Iteration from "./components/Iteration.vue";
 </script>
 
@@ -23,6 +24,11 @@ import Iteration from "./components/Iteration.vue";
       class="min-h-screen bg-green-100 text-gray-100 flex flex-col items-center justify-center"
     >
       <Iteration />
+    </div>
+    <div
+      class="min-h-screen bg-green-100 text-gray-100 flex flex-col items-center justify-center"
+    >
+      <InputBindings />
     </div>
   </div>
 </template>
