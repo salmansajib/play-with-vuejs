@@ -5,13 +5,15 @@ const toggleValue = ref(true);
 </script>
 
 <template>
-  <div>
-    <h1 class="pb-5 text-2xl font-semibold">
-      Vue is <span v-if="toggleValue">Awesome</span> <span v-else>Meh</span>!
+  <div class="w-[300px]">
+    <h1 class="pb-5 text-2xl font-semibold max-w-max">
+      Vue is
+      <span class="text-blue-500" v-if="toggleValue">Awesome!</span>
+      <span class="text-red-500" v-else>Meh!</span>
     </h1>
     <button
       @click="toggleValue = !toggleValue"
-      class="border border-gray-100 rounded-md px-4 py-2"
+      class="bg-gray-100 text-slate-900 font-semibold rounded-md px-4 py-2"
     >
       Toggle
     </button>

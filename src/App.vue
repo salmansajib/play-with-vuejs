@@ -16,7 +16,7 @@ import Iteration from "./components/Iteration.vue";
       <Counter />
     </div>
     <div
-      class="min-h-screen bg-slate-700 text-gray-100 flex flex-col items-center justify-center"
+      class="py-10 bg-slate-700 text-gray-100 flex flex-col items-center justify-center"
     >
       <ConditionalRendering />
     </div>
@@ -26,7 +26,7 @@ import Iteration from "./components/Iteration.vue";
       <Iteration />
     </div>
     <div
-      class="min-h-screen bg-green-100 text-gray-100 flex flex-col items-center justify-center"
+      class="min-h-screen bg-gray-100 text-gray-100 flex flex-col items-center justify-center"
     >
       <InputBindings />
     </div>
